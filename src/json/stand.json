@@ -1,0 +1,205 @@
+{
+    "stands": [
+      {
+        "nome": "Star Platinum",
+        "intervalo": [1, 50],
+        "atributos": {
+          "força": 10,
+          "agilidade": 9,
+          "resistência": 8,
+          "poder": 10
+        }
+      },
+      {
+        "nome": "The World",
+        "intervalo": [51, 100],
+        "atributos": {
+          "força": 10,
+          "agilidade": 8,
+          "resistência": 8,
+          "poder": 9
+        }
+      },
+      {
+        "nome": "Crazy Diamond",
+        "intervalo": [101, 150],
+        "atributos": {
+          "força": 9,
+          "agilidade": 7,
+          "resistência": 9,
+          "poder": 8
+        }
+      },
+      {
+        "nome": "Killer Queen",
+        "intervalo": [151, 200],
+        "atributos": {
+          "força": 7,
+          "agilidade": 6,
+          "resistência": 6,
+          "poder": 8
+        }
+      },
+      {
+        "nome": "Gold Experience",
+        "intervalo": [201, 250],
+        "atributos": {
+          "força": 6,
+          "agilidade": 7,
+          "resistência": 8,
+          "poder": 9
+        }
+      },
+      {
+        "nome": "Sticky Fingers",
+        "intervalo": [251, 300],
+        "atributos": {
+          "força": 7,
+          "agilidade": 8,
+          "resistência": 7,
+          "poder": 7
+        }
+      },
+      {
+        "nome": "Aerosmith",
+        "intervalo": [301, 350],
+        "atributos": {
+          "força": 5,
+          "agilidade": 6,
+          "resistência": 6,
+          "poder": 7
+        }
+      },
+      {
+        "nome": "Purple Haze",
+        "intervalo": [351, 400],
+        "atributos": {
+          "força": 8,
+          "agilidade": 6,
+          "resistência": 5,
+          "poder": 9
+        }
+      },
+      {
+        "nome": "Silver Chariot",
+        "intervalo": [401, 450],
+        "atributos": {
+          "força": 8,
+          "agilidade": 9,
+          "resistência": 7,
+          "poder": 8
+        }
+      },
+      {
+        "nome": "Hermit Purple",
+        "intervalo": [451, 500],
+        "atributos": {
+          "força": 4,
+          "agilidade": 5,
+          "resistência": 6,
+          "poder": 7
+        }
+      },
+      {
+        "nome": "Magician's Red",
+        "intervalo": [501, 550],
+        "atributos": {
+          "força": 7,
+          "agilidade": 6,
+          "resistência": 7,
+          "poder": 8
+        }
+      },
+      {
+        "nome": "Hierophant Green",
+        "intervalo": [551, 600],
+        "atributos": {
+          "força": 5,
+          "agilidade": 6,
+          "resistência": 7,
+          "poder": 8
+        }
+      },
+      {
+        "nome": "The Hand",
+        "intervalo": [601, 650],
+        "atributos": {
+          "força": 8,
+          "agilidade": 6,
+          "resistência": 7,
+          "poder": 9
+        }
+      },
+      {
+        "nome": "Heaven's Door",
+        "intervalo": [651, 700],
+        "atributos": {
+          "força": 4,
+          "agilidade": 5,
+          "resistência": 6,
+          "poder": 9
+        }
+      },
+      {
+        "nome": "Echoes Act 1",
+        "intervalo": [701, 750],
+        "atributos": {
+          "força": 6,
+          "agilidade": 6,
+          "resistência": 7,
+          "poder": 6
+        }
+      },
+      {
+        "nome": "Red Hot Chili Pepper",
+        "intervalo": [751, 800],
+        "atributos": {
+          "força": 7,
+          "agilidade": 8,
+          "resistência": 6,
+          "poder": 7
+        }
+      },
+      {
+        "nome": "Sex Pistols",
+        "intervalo": [801, 850],
+        "atributos": {
+          "força": 5,
+          "agilidade": 7,
+          "resistência": 6,
+          "poder": 6
+        }
+      },
+      {
+        "nome": "Soft & Wet",
+        "intervalo": [851, 900],
+        "atributos": {
+          "força": 6,
+          "agilidade": 7,
+          "resistência": 7,
+          "poder": 8
+        }
+      },
+      {
+        "nome": "Tusk Act 1",
+        "intervalo": [901, 950],
+        "atributos": {
+          "força": 7,
+          "agilidade": 6,
+          "resistência": 7,
+          "poder": 7
+        }
+      },
+      {
+        "nome": "King Crimson",
+        "intervalo": [951, 1000],
+        "atributos": {
+          "força": 10,
+          "agilidade": 7,
+          "resistência": 9,
+          "poder": 10
+        }
+      }
+    ]
+  }
+  

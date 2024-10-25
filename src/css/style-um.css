@@ -1,0 +1,149 @@
+#resultado{
+    background-color: var(--cor-2);
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+}
+#personagem{
+    width: 200px;
+    height: 100px;
+    font-family: 'jojo';
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+#form-personagem{
+    font-size: 30px;
+    background-color: var(--cor-2);
+    padding: 1%;
+}
+.status{
+    outline: 0;
+    cursor: default;
+    background-color: var(--cor-1);
+    font-family: 'jojo';
+    color: var(--cor-5);
+    border:none;
+    width: 10%;
+}
+#mudar{
+    height: 50px;
+    width: 150px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: 'jojo';
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: var(--cor-4);
+    border-color: var(--cor-3);
+    border-width: 5px;
+}
+.mudar{
+    background-color: var(--cor-2);
+    padding: 10px;
+}
+.divider {
+      display: flex;
+      align-items: center;
+    }
+    
+    .divider::after, .divider::before {
+      background-color: var(--cor-3);
+      content: '';
+      height: 5px;
+      margin: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+#status{
+    margin-left: 20px;
+    margin-right: 50px;
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+}
+#status:hover{
+    transition: 0.15;
+    background-color: var(--cor-3);
+}
+
+@media (max-width:450px) {
+    #form-personagem{
+        display: flex;
+        flex-direction: column;
+    }
+    .status{
+        width: 150px;
+    }
+    #status{
+        margin-left: 170px;
+        margin-right: 200px;
+        margin-top: -10%;
+        padding: 5px;
+        font-size: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+        border-style: none;
+        cursor: pointer;
+    }
+}
+
+.treinamento:hover{
+    transition: 0.5s;
+    background: url(/jonathan-joestar-sunlight);
+    background-position-x: 0px;
+    background-size: 100%;
+    color: transparent;
+}
+.biblioteca:hover{
+    transition: 0.5s;
+    background: url(/weather-report-weather-jjba);
+    background-position-y: -100px;
+    background-size: 100%;
+    color: transparent;
+}
+.batalha:hover{
+    transition: 0.5s;
+    background: url(/dio-vs-jotaro);
+    background-size: 100%;
+    color: transparent;
+}
+.loja:hover{
+    transition: 0.5s;
+    background: url(/loja-pet-shop);
+    background-size: 100%;
+    color: transparent;
+}
+.missoes:hover{
+    transition: 0.5s;
+    background: url(/polnareff);
+    background-size: 100%;
+    background-position-y: -20px;
+    color: transparent;
+}
+.trabalho:hover{
+    transition: 0.5s;
+    background: url(/bruno-bucharatti-giorno-giovanna);
+    background-size: 100%;
+    background-position-y: -10px;
+    color: transparent;
+}
+.inventario:hover{
+    transition: 0.5s;
+    background: url(/jojo-banner-3);
+    background-size: 100%;
+    color: transparent;
+}
+.sim:hover{
+    background: url(/jojo-banner-1);
+}

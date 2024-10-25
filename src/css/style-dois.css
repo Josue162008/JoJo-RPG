@@ -1,0 +1,31 @@
+.batalha-container{
+    background-color: var(--cor-2);
+    padding: 2%;
+    margin: 2%;
+    margin-right: 48%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media (max-width:450px){
+    .batalha-container{
+        padding: 10%;
+    }
+}
+#treinar{
+    height: 50px;
+}
+#registrar-stand{
+    background-color: var(--cor-2);
+    padding: 2%;
+    margin: 2%;
+    margin-right: 48%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+table tr td{
+    padding: 15px;
+}

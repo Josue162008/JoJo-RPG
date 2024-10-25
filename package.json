@@ -1,0 +1,28 @@
+{
+  "name": "jojo-rpg",
+  "version": "1.0.0",
+  "description": "<h1>JoJo's RPG</h1>\r <p>O JoJo's RPG é um jogo de RPG Web, ou seja, um jogo onde você atua como um personagem feito por você mesmo e joga com/contra outros jogadores diretamente pelo seu navegador, este jogo foi feito por um fã chamado \"Josué de Oliveira\" que teve a brilhante ideia de criar um RPG no estilo do famoso DBZLife e do Pokemon Age, claro que não foi copiado e nem nada, apenas inspirado neles.\r   Um Jogo de RPG completo com TODOS os personagens. Neste mundo você pode batalhar contra DIO BRANDO ou até contra o Diavolo, tu pode ter a escolha de ser um usuário de Stand, ser usuário de hamon, ser um vampiro ou comer a fruta lokakaka. \r   Conseguir controlar o tempo, ser o mais forte e bater de frente com os maiores vilões. Inúmeras aventuras estão a sua espera! Como já dizia o Star Platinum: \"ORAORAORA\"</p>",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "3": "^2.1.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mysql2": "^3.11.3",
+    "node.js": "^0.0.1-security",
+    "path": "^0.12.7",
+    "socket.io": "^4.8.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

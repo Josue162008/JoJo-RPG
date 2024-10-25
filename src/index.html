@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Este é um RPG de JoJo para todos jogarem e se divirtirem! ORAORAORAORAORAORAORAORAORA ORAAAAAA!!"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JoJo's RPG</title>
+    <link rel="icon" href="img/icon-killer-queen.jpg" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="js/main.js"></script>
+    <script src="js/informacoes-usuario.js"></script>
+    <script>
+      const socket = io();
+
+      socket.on("connect", () => {
+        console.log("Conectado ao servidor");
+      });
+
+      socket.on("disconnect", () => {
+        console.log("Desconectado do servidor");
+      });
+      fetch("/usuarios")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((error) => {
+          console.error("Erro ao buscar os usuários:", error);
+        });
+    </script>
+  </head>
+  <body>
+    <center>
+      <div class="form-container-cadastro" id="formCadastro">
+        <img src="img/gif/sticker-gif-1.gif" height="190px" />
+        <br /><br />
+        <h1>Login / Cadastro</h1>
+        <label>Nome do personagem:</label><br />
+        <input type="text" id="nome" autocomplete="off" required /><br /><br />
+        <label>Email:</label><br />
+        <input type="email" id="email" required /><br /><br />
+        <label>Senha:</label><br />
+        <input type="password" id="senha" required /><br /><br />
+        <div id="senhaResultado"></div>
+        <label>Idade do personagem:</label><br />
+        <input type="number" id="idade" required />
+        <div id="resultado-idade"></div>
+        <br /><br />
+        <button id="cadastro" disabled>Cadastrar</button><br><br>
+        <button id="login" onclick="login()">Já possuo uma conta</button>
+      </div>
+    </center>
+    <div align="right" class="info-container">
+      <center>
+        <img src="img/icon-killer-queen.jpg" height="150px" />
+        <h1>JoJo's RPG</h1>
+      </center>
+      <br />
+      <center>
+        <p>
+          O JoJo's RPG é um jogo de RPG Web, ou seja, um jogo onde você atua
+          como um personagem feito por você mesmo e joga com/contra outros
+          jogadores diretamente pelo seu navegador, este jogo foi feito por um
+          fã chamado "Josué de Oliveira" que teve a brilhante ideia de criar um
+          RPG no estilo do famoso DBZLife e do Pokemon Age, claro que não foi
+          copiado e nem nada, apenas inspirado neles. Um Jogo de RPG completo
+          com TODOS os personagens. Neste mundo você pode batalhar contra DIO
+          BRANDO ou até contra o Diavolo, tu pode ter a escolha de ser um
+          usuário de Stand, ser usuário de hamon, ser um vampiro ou comer a
+          fruta lokakaka. Conseguir controlar o tempo, ser o mais forte e bater
+          de frente com os maiores vilões. Inúmeras aventuras estão a sua
+          espera! Como já dizia o Star Platinum: "ORAORAORA"
+        </p>
+      </center>
+      <br />
+      <img src="img/banner-jojo-1.jpg" width="555.24px" />
+    </div>
+  </body>
+</html>
