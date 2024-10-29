@@ -1,10 +1,8 @@
 const express = require('express');
 const path = require('path');
-const { parentPort } = require('worker_threads');
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 const http = require('http');
-const { IOERR } = require('sqlite3');
 const server = new http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server, {
@@ -13,18 +11,17 @@ const io = new Server(server, {
         methods: ["GET", "POST"]
     }
 });
-// const mysql = require('mysql2');
 
 app.use(express.static(path.join(__dirname, 'src')));
-// ----------------------SOCKET.IO--------------------------------------
-io.on('connection', (socket) => {
+//----------------------SOCKET.IO--------------------------------------
+io.on('connection', (socket) => {-
     console.log('Um usuário se conectou');
   
     socket.on('disconnect', () => {
       console.log('Um usuário se desconectou');
     });
   });
-// ------------------------HTML-------------------------------------------
+//-----------------------HTML-------------------------------------------
 app.get('/cadastro-login', (req, res) => {
     res.sendFile(path.join(__dirname, 'src', 'index.html'));
 });
@@ -56,7 +53,7 @@ app.get('/stand', (req, res) =>{
     res.sendFile(path.join(__dirname, 'src', 'html', 'stand.html'))
 });
 
-// ------------------------STYLE------------------------------------------
+//-----------------------STYLE------------------------------------------
 app.get('/main-css', (req, res) => {
     res.sendFile(path.join(__dirname, 'main.css'));
 });
@@ -73,7 +70,7 @@ app.get('/main', (req, res) => {
     res.sendFile(path.join(__dirname, 'src', 'main.css'));
 });
 
-// ------------------------JAVASCRIPT E JSON-------------------------------
+//----------------------JAVASCRIPT E JSON-------------------------------
 app.get('/informacoes-usuario', (req, res) =>{
     res.sendFile(path.join(__dirname, 'src', 'js', 'informacoes-usuario.js'));
 });
@@ -89,7 +86,7 @@ app.get('/stands-js', (req, res) =>{
 app.get('/stands-json', (req, res)=>{
     res.sendFile(path.join(__dirname, 'src', 'json', 'stand.json'));
 });
-//------------------------IMAGENS-E-VIDEOS--------------------------------
+//----------------------IMAGENS-E-VIDEOS--------------------------------
 app.get('/icon-killer-queen', (req,res) => {
     res.sendFile(path.join(__dirname, 'src', 'img', 'icon-killer-queen.jpg'));
 });
@@ -117,33 +114,7 @@ app.get('/jojo-banner-3', (req,res)=>{
 app.get('/jojo-banner-1', (req,res)=>{
     res.sendFile(path.join(__dirname, 'src', 'img', 'gif', 'jojo-banner-1.gif'));
 });
-// ----------------------OUTRAS COISAS DO NODE.JS-----------------------
+//-----------------------OUTRAS COISAS DO NODE.JS-----------------------
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}/cadastro-login`);
 });
-
-// ------------------------SQL---------------------------------------------
-/*
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'YES',
-  database: 'usuarios',
-  port: '3000'
-});
-
-connection.connect((err) => {
-    if (err) {
-      console.error('Erro ao conectar ao banco de dados:', err.message);
-      return;
-    }
-    console.log('Conectado ao banco de dados MySQL!');
-    connection.end((err) => {
-      if (err) {
-        console.error('Erro ao encerrar a conexão:', err.message);
-        return;
-      }
-      console.log('Conexão encerrada.');
-    });
-  });
-*/
