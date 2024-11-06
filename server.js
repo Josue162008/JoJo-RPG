@@ -11,6 +11,7 @@ const io = new Server(server, {
         methods: ["GET", "POST"]
     }
 });
+const fs = require('fs');
 
 app.use(express.static(path.join(__dirname, 'src')));
 //----------------------SOCKET.IO--------------------------------------
@@ -55,10 +56,7 @@ app.get('/stand', (req, res) =>{
 
 //-----------------------STYLE------------------------------------------
 app.get('/main-css', (req, res) => {
-    res.sendFile(path.join(__dirname, 'main.css'));
-});
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'main.css'));
+    res.sendFile(path.join(__dirname, 'src', 'main.css'));
 });
 app.get('/style-um', (req, res) => {
     res.sendFile(path.join(__dirname, 'src', 'css', 'style-um.css'));
@@ -86,6 +84,9 @@ app.get('/stands-js', (req, res) =>{
 app.get('/stands-json', (req, res)=>{
     res.sendFile(path.join(__dirname, 'src', 'json', 'stand.json'));
 });
+app.get('/dados', (req, res)=>{
+    res.sendFile(path.join(__dirname, 'json', 'dados_python.json'));
+});
 //----------------------IMAGENS-E-VIDEOS--------------------------------
 app.get('/icon-killer-queen', (req,res) => {
     res.sendFile(path.join(__dirname, 'src', 'img', 'icon-killer-queen.jpg'));
@@ -112,7 +113,16 @@ app.get('/jojo-banner-3', (req,res)=>{
     res.sendFile(path.join(__dirname, 'src', 'img', 'gif', 'jojo-banner-3.gif'));
 });
 app.get('/jojo-banner-1', (req,res)=>{
-    res.sendFile(path.join(__dirname, 'src', 'img', 'gif', 'jojo-banner-1.gif'));
+    res.sendFile(path.join(__dirname, 'src', 'img', 'gif', 'banner-jojo-1.jpg'));
+});
+app.get('/jojo-wallpaper', (req,res)=>{
+    res.sendFile(path.join(__dirname, 'src', 'img', 'jojo-wallpaper-3.jpg'));
+});
+app.get('/wallpaper-gif', (req,res)=>{
+    res.sendFile(path.join(__dirname, 'src', 'img', 'gif', 'wallpaper.gif'));
+});
+app.get('/jojo-sticker-gif-1', (req,res)=>{
+    res.sendFile(path.join(__dirname, 'src', 'img', 'gif', 'sticker-gif-1.gif'));
 });
 //-----------------------OUTRAS COISAS DO NODE.JS-----------------------
 app.listen(PORT, () => {

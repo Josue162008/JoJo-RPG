@@ -19,7 +19,7 @@
 }
 body{
     font-family: 'jojo';
-    background: url(img/jojo-wallpaper-3.jpg);
+    background: url(/jojo-wallpaper);
     background-attachment: fixed;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@ input{
 
 @media (max-width:450px) {
     body{
-        background-image: url(img/gif/wallpaper.gif);
+        background-image: url('/wallpaper-gif');
         background-size: 120%;
         width: 412px;
         margin: 0;

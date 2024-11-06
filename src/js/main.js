@@ -50,6 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("sabedoria", JSON.stringify(0));
 
       window.location = "/home";
+
+      
     }
   });
 
