@@ -87,6 +87,29 @@ app.get('/stands-json', (req, res)=>{
 app.get('/dados', (req, res)=>{
     res.sendFile(path.join(__dirname, 'json', 'dados_python.json'));
 });
+
+const caminhoBanco = '/json/dados.json';
+
+function lerBanco() {
+    try {
+      const dados = fs.readFileSync(caminhoBanco, "utf8");
+      return JSON.parse(dados);
+    } catch (erro) {
+      console.error("Erro ao ler o banco de dados:", erro);
+      return null;
+    }
+  }
+  
+  app.get("/usuarios", (req, res) => {
+    const banco = lerBanco();
+    if (banco) {
+      res.json(banco.usuarios);
+    } else {
+      res.status(500).send("Erro ao acessar o banco de dados");
+    }
+  });
+
+
 //----------------------IMAGENS-E-VIDEOS--------------------------------
 app.get('/icon-killer-queen', (req,res) => {
     res.sendFile(path.join(__dirname, 'src', 'img', 'icon-killer-queen.jpg'));
