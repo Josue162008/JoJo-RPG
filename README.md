@@ -3,6 +3,7 @@
   Um Jogo de RPG completo com TODOS os personagens. Neste mundo você pode batalhar contra DIO BRANDO ou até contra o Diavolo, tu pode ter a escolha de ser um usuário de Stand, ser usuário de hamon, ser um vampiro ou comer a fruta lokakaka. 
   Conseguir controlar o tempo, ser o mais forte e bater de frente com os maiores vilões. Inúmeras aventuras estão a sua espera! Como já dizia o Star Platinum: "ORAORAORA"</p>
 <footer>(Por enquanto está em construção)</footer>
+
 ##### npm install socket.io
 ##### npm install express
 ##### npm install sqlite3
